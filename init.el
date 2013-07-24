@@ -165,5 +165,5 @@
 (setq exec-path (cons (expand-file-name "/home/vagrant/.rbenv/shims/sass") exec-path))                                                        
                                                                                                                                               
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/scss"))                                                                                 
-(autoload 'scss-mode "scss-mode")                                                                                                             
-(add-to-list 'auto-mode-alist '("\\.scss\\'" . scss-mode))      
+(autoload 'scss-mode "scss-mode")                                                                                                            (add-to-list 'auto-mode-alist '("\\.scss\\'" . scss-mode))      
+(setq scss-compile-at-save nil)     
